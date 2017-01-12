@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A6C2BF7C1E26A9F000EEBBD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C2BF7B1E26A9F000EEBBD5 /* AppDelegate.swift */; };
-		A6C2BF7E1E26A9F000EEBBD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C2BF7D1E26A9F000EEBBD5 /* ViewController.swift */; };
+		A6C2BF7E1E26A9F000EEBBD5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C2BF7D1E26A9F000EEBBD5 /* MainVC.swift */; };
 		A6C2BF811E26A9F000EEBBD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C2BF7F1E26A9F000EEBBD5 /* Main.storyboard */; };
 		A6C2BF831E26A9F000EEBBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C2BF821E26A9F000EEBBD5 /* Assets.xcassets */; };
 		A6C2BF861E26A9F000EEBBD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C2BF841E26A9F000EEBBD5 /* LaunchScreen.storyboard */; };
 		A6C2BF911E26A9F100EEBBD5 /* JuniorBabyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C2BF901E26A9F100EEBBD5 /* JuniorBabyTests.swift */; };
 		A6C2BF9C1E26A9F100EEBBD5 /* JuniorBabyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C2BF9B1E26A9F100EEBBD5 /* JuniorBabyUITests.swift */; };
+		A6C2BFAB1E26B3C600EEBBD5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C2BFAA1E26B3C600EEBBD5 /* Constants.swift */; };
+		A6C2BFB01E26E03E00EEBBD5 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C2BFAF1E26E03E00EEBBD5 /* MainTableViewCell.swift */; };
+		A6C2BFB21E26E48000EEBBD5 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C2BFB11E26E48000EEBBD5 /* DataCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		A6C2BF781E26A9F000EEBBD5 /* JuniorBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuniorBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C2BF7B1E26A9F000EEBBD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6C2BF7D1E26A9F000EEBBD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6C2BF7D1E26A9F000EEBBD5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		A6C2BF801E26A9F000EEBBD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6C2BF821E26A9F000EEBBD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C2BF851E26A9F000EEBBD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		A6C2BF971E26A9F100EEBBD5 /* JuniorBabyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuniorBabyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C2BF9B1E26A9F100EEBBD5 /* JuniorBabyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuniorBabyUITests.swift; sourceTree = "<group>"; };
 		A6C2BF9D1E26A9F100EEBBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C2BFAA1E26B3C600EEBBD5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A6C2BFAF1E26E03E00EEBBD5 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		A6C2BFB11E26E48000EEBBD5 /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		A6C2BF7A1E26A9F000EEBBD5 /* JuniorBaby */ = {
 			isa = PBXGroup;
 			children = (
+				A6C2BFAE1E26DFF100EEBBD5 /* Controller */,
+				A6C2BFAD1E26DFEB00EEBBD5 /* View */,
+				A6C2BFAC1E26DFE500EEBBD5 /* Model */,
+				A6C2BFA91E26B3AD00EEBBD5 /* Utils */,
 				A6C2BF7B1E26A9F000EEBBD5 /* AppDelegate.swift */,
-				A6C2BF7D1E26A9F000EEBBD5 /* ViewController.swift */,
 				A6C2BF7F1E26A9F000EEBBD5 /* Main.storyboard */,
 				A6C2BF821E26A9F000EEBBD5 /* Assets.xcassets */,
 				A6C2BF841E26A9F000EEBBD5 /* LaunchScreen.storyboard */,
@@ -123,6 +132,38 @@
 				A6C2BF9D1E26A9F100EEBBD5 /* Info.plist */,
 			);
 			path = JuniorBabyUITests;
+			sourceTree = "<group>";
+		};
+		A6C2BFA91E26B3AD00EEBBD5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6C2BFAA1E26B3C600EEBBD5 /* Constants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A6C2BFAC1E26DFE500EEBBD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6C2BFB11E26E48000EEBBD5 /* DataCell.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A6C2BFAD1E26DFEB00EEBBD5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6C2BFAF1E26E03E00EEBBD5 /* MainTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A6C2BFAE1E26DFF100EEBBD5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6C2BF7D1E26A9F000EEBBD5 /* MainVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C2BF7E1E26A9F000EEBBD5 /* ViewController.swift in Sources */,
+				A6C2BF7E1E26A9F000EEBBD5 /* MainVC.swift in Sources */,
 				A6C2BF7C1E26A9F000EEBBD5 /* AppDelegate.swift in Sources */,
+				A6C2BFB01E26E03E00EEBBD5 /* MainTableViewCell.swift in Sources */,
+				A6C2BFB21E26E48000EEBBD5 /* DataCell.swift in Sources */,
+				A6C2BFAB1E26B3C600EEBBD5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
