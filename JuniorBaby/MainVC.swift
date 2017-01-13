@@ -39,7 +39,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         if ( UIDevice.current.userInterfaceIdiom == .pad)
         {
-            tableView.rowHeight = 210
+            tableView.rowHeight = 218
             tableView.sectionFooterHeight = 170
         }
         
